@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <h1>Heart Health Assistant</h1>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hello! I'm your Heart Health Assistant powered by AI. I can answer questions about heart disease prevention, healthy lifestyle choices, risk factors, and more. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <textarea id="user-input" placeholder="Ask a question about heart health..." rows="1"></textarea>
+                <button id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> This chatbot provides general information about heart health and is not a substitute for professional medical advice. Always consult with a healthcare provider for personal medical guidance.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/script.js') }}"></script>
+</body>
+</html>
